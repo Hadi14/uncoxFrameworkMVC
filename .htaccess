@@ -1,1 +1,8 @@
-Option -Indexes
+Options -Indexes
+
+RewriteEngine On
+
+
+
+RewriteCond %{REQUEST_URI} .* 
+RewriteRule .* index.php [L]
