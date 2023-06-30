@@ -20,3 +20,7 @@ function getFullUrl()
     $strurl = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     return  $strurl;
 }
+function getRequestUri()
+{
+    return $_SERVER['REQUEST_URI'];
+}

@@ -20,7 +20,8 @@
 
 <body>
     <?
-    require_once('/Config/main.php');
+    require_once('./Config/main.php');
+    echo getFullUrl();
     $guest = isset($_SESSION['suname']);
     if ($guest) {
         echo $_SESSION['suname'] . " " .  "عزیز خوش آمدید ";
