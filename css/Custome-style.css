@@ -1,0 +1,17 @@
+.bi-buildings {
+    font-size: 40px;
+    color: #24e98d;
+    margin-left: 5px;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
