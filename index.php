@@ -20,8 +20,24 @@
 
 <body>
     <?
-    require_once('./Config/main.php');
-    echo getFullUrl();
+    require_once('Config/main.php');
+    $uri = getRequestUri();
+    $uri = str_replace('/uncoxFrameworkMVC/', '/', $uri);
+    $parts = explode('/', $uri);
+    $controler = $parts[1];
+    $method = $parts[2];
+    $params[] = array();
+    for ($i = 3; $i < count($parts); $i++) {
+        $params[] = $parts[$i];
+    }
+    echo "<br>" . $controler . "<br>" . $method . "<br>";
+    print_r($params);
+    $classname = ucfirst($controler) . "Controler";
+
+
+
+
+
     $guest = isset($_SESSION['suname']);
     if ($guest) {
         echo $_SESSION['suname'] . " " .  "عزیز خوش آمدید ";
