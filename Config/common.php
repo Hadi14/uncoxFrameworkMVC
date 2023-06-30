@@ -15,3 +15,8 @@ function dump($var, $return = false)
         echo "<pre> $out</pre>";
     }
 }
+function getFullUrl()
+{
+    $strurl = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    return  $strurl;
+}
