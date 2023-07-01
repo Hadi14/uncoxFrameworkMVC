@@ -20,6 +20,7 @@
 
 <body>
     <?
+    // echo
     require_once('Config/main.php');
     $uri = getRequestUri();
     $uri = str_replace('/uncoxFrameworkMVC/', '/', $uri);
