@@ -23,6 +23,8 @@
     $userpath = "controller/user.php";
     require_once($userpath);
     $userClassInstance = new $classname();
+    $userClassInstance->$method($params);
+
 
 
 
