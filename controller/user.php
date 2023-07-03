@@ -3,7 +3,7 @@ class UserController
 {
     function __construct()
     {
-        echo "<br><br> Constructor Method.!!!";
+        echo "<br><br>controller/user.php --- Constructor Method.!!!";
     }
     public function profile($params)
     {
@@ -38,7 +38,8 @@ class UserController
     }
     private function loginForm()
     {
-        echo "<br>Login Form.!! Please fill all fields";
+        echo "<br>controller/user.php ---- loginForm() Method.!!";
+        View::renderTemplate("view/test.php");
     }
     public function register()
     {
