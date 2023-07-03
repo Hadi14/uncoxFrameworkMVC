@@ -18,13 +18,15 @@
 </head>
 
 <body>
+    <?
+    echo "<br>view/default.php ---" . $params['content'];
+    // print_r($params);
+    ?>
+
     <div class="layer"></div>
     <!-- ! Body -->
     <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
     <div class="page-flex">
-
-
-
         <!-- ! Sidebar *********************************************-->
         <aside class="sidebar">
             <div class="sidebar-start">
@@ -194,7 +196,7 @@
                 <a href="##" class="sidebar-user">
                     <span class="sidebar-user-img">
                         <picture>
-                            <source srcset="./img/avatar/avatar-illustrated-03.webp" type="image/webp"><img src="./img/avatar/avatar-illustrated-03.png" alt="User name">
+                            <source srcset="<? baseUrl() ?>/img/avatar/avatar-illustrated-03.webp" type="image/webp"><img src="<? baseUrl() ?>/img/avatar/avatar-illustrated-03.png" alt="User name">
                         </picture>
                     </span>
                     <div class="sidebar-user-info">
@@ -289,7 +291,7 @@
                                 <span class="sr-only">My profile</span>
                                 <span class="nav-user-img">
                                     <picture>
-                                        <source srcset="./img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="./img/avatar/avatar-illustrated-02.png" alt="User name">
+                                        <source srcset="<? baseUrl() ?>/img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="<? baseUrl() ?>/img/avatar/avatar-illustrated-02.png" alt="User name">
                                     </picture>
                                 </span>
                             </button>
