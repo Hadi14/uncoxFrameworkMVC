@@ -1,9 +1,9 @@
 <?
 class View
 {
-    public static function renderTemplate($filePath, $params)
+    public static function renderTemplate($filePath)
     {
-        extract($params);
+        // extract($params);
         ob_start();
         echo "<br>config/view.php ---";
         require_once($filePath);

@@ -39,8 +39,8 @@ class UserController
     private function loginForm()
     {
         echo "<br>controller/user.php ---- loginForm() Method.!!!";
-        $params['content'] = "hadi kiani";
-        View::renderTemplate("view/test.php", $params);
+        // $params['content'] = "hadi kiani";
+        View::renderTemplate("view/test.php");
     }
     public function register()
     {
