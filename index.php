@@ -1,5 +1,6 @@
 
     <?
+    echo "<br>index.php Started ----> ";
     define('key', true);
     require_once('Config/main.php');
     $uri = getRequestUri();
@@ -19,8 +20,8 @@
     }
     print_r($params);
     $classname = ucfirst($controler) . "Controller";
-    // $userpath = baseUrl() . "/controller/" . $controler . ".php";
-    $userpath = "controller/user.php";
+    $userpath = "controller/" . $controler . ".php";
+    // $userpath = "controller/user.php";
     require_once($userpath);
     $userClassInstance = new $classname();
     $userClassInstance->$method($params);
