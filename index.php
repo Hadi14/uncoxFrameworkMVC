@@ -20,7 +20,7 @@
     }
     print_r($params);
     $classname = ucfirst($controler) . "Controller";
-    $userpath = "controller/" . $controler . ".php";
+    $userpath = "mvc/controller/" . $controler . ".php";
     // $userpath = "controller/user.php";
     echo $userpath;
     require_once($userpath);

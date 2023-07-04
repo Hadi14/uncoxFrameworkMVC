@@ -50,8 +50,8 @@
   <!-- Icons library -->
   <script src="plugins/feather.min.js"></script>
   <!-- Custom scripts -->
-  <script src="js/script.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="<?= baseUrl() ?>js/script.js"></script>
+  <script src="<?= baseUrl() ?>js/bootstrap.bundle.min.js"></script>
 
 
 </body>
