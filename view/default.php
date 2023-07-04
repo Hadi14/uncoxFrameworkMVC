@@ -19,7 +19,7 @@
 
 <body>
     <?
-    echo "<br>view/default.php ---" . $params['content'];
+    echo "<br>view/default.php ---" . $aaa;
     // print_r($params);
     ?>
 
