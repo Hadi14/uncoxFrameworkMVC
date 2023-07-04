@@ -1,2 +1,2 @@
 <?
-echo "<br>view/text.php ";
+echo "<br>view/test.php ";
