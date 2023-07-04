@@ -291,7 +291,7 @@
                                 <span class="sr-only">My profile</span>
                                 <span class="nav-user-img">
                                     <picture>
-                                        <source srcset="<? baseUrl() ?>/img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="<? baseUrl() ?>/img/avatar/avatar-illustrated-02.png" alt="User name">
+                                        <source srcset="<?= baseUrl() ?>/img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="<? baseUrl() ?>img/avatar/avatar-illustrated-02.png" alt="User name">
                                     </picture>
                                 </span>
                             </button>
