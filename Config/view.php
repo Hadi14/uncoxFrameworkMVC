@@ -10,7 +10,7 @@ class View
         require_once("mvc/" . $filePath);
         $content = ob_get_clean();
 
-        // require_once("view/default.php");
-        require_once("mvc/view/login.php");
+        // require_once("theme/default.php");
+        require_once("theme/login.php");
     }
 }
