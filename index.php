@@ -22,6 +22,7 @@
     $classname = ucfirst($controler) . "Controller";
     $userpath = "controller/" . $controler . ".php";
     // $userpath = "controller/user.php";
+    echo $userpath;
     require_once($userpath);
     $userClassInstance = new $classname();
     $userClassInstance->$method($params);

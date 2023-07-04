@@ -19,7 +19,7 @@
 
 <body>
     <?
-    echo "<br>view/test.php HHHHHHHHHHHH---" . $content;
+    echo "<br>view/login.php ---" . $content;
     // print_r($params);
     ?>
 

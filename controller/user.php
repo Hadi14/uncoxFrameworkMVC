@@ -21,26 +21,32 @@ class UserController
     }
     private function loginCheck()
     {
-        if (isset($_GET['submit'])) {
-            require_once("./Config/main.php");
-
-            $db = Db::getInstance();
-            $un = $_GET['uname'];
-            $record = $db->first("select * from users where user='$un'");
-
-            if ($record && $record['password'] == $_GET['pass']) {
-
-                header("Location: index.php");
-            } else {
-                echo "Fail to Login...";
-            }
+        if (isset($_SESSION['suname'])) {
+            header("Location: index.php");
+            echo  "Already logined";
+        } else {
+            echo  "NO Already logined";
         }
+        // if (isset($_GET['submit'])) {
+        //     require_once("./Config/main.php");
+
+        //     $db = Db::getInstance();
+        //     $un = $_GET['uname'];
+        //     $record = $db->first("select * from users where user='$un'");
+
+        //     if ($record && $record['password'] == $_GET['pass']) {
+
+        //         header("Location: index.php");
+        //     } else {
+        //         echo "Fail to Login...";
+        //     }
+        // }
     }
     private function loginForm()
     {
         echo "<br>controller/user.php ---- loginForm() Method.!!!";
         // $params['content'] = "hadi kiani";
-        View::renderTemplate("view/test.php");
+        View::renderTemplate("view/login-check.php");
     }
     public function register()
     {
